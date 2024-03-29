@@ -1,0 +1,57 @@
+:root {
+    --text-primary: rgba(0, 0, 0, 1);
+    --text-secondary: rgba(206, 206, 206, 1);
+    --background-primary: rgba(255, 255, 255, 1);
+    --background-secondary: rgba(0, 0, 0, 1);
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+header {
+    background-color: var(--background-secondary);
+}
+
+nav {
+    padding: 8px;
+    max-width: 1656px;
+    margin: auto;
+    color: var(--text-secondary);
+    display: flex;
+}
+
+nav p {
+    font-size: 1.8rem;
+    margin-right: 48px;
+}
+
+.header-logo {
+    padding: 4px 8px;
+    background-color: rgb(202, 0, 0);
+    font-size: 1.8rem;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+
+nav > ul > li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.hero-home-img {
+    height: 400px;
+    width: 100%;
+    background-image: url(./assets/images/monstrossa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
