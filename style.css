@@ -53,5 +53,77 @@ nav > ul > li {
     background-image: url(./assets/images/monstrossa.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+}
+
+.hero-home-img h1 {
+    font-size: 3.6rem;
+}
+
+.hero-home-img h2 {
+    margin-top: 9px;
+    font-size: 2.2rem;
+}
+
+.hero-flex {
+    width: 1080px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.white-opacity {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bar p{
+    font-size: 1.4rem;
+    background-color: white;
+    border-radius: 5px 0px 0px 5px;
+    padding: 11px 0px 11px 13px;
+    color: #A9A4A4;
+}
+
+.button p{
+    font-size: 1.4rem;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #C0392B;
+
+    color: white;
+    padding: 11px;
+    text-align: center;
+}
+
+.bar {
+    width: 933px;
+}
+
+.button {
+    width: 153px;
+}
+
+.search {
+    padding-top: 34px;
+    display: flex;
+    margin: auto;
+    width: 1080px
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-group {
+    max-width: 1201px;
+    margin: auto;
 }
