@@ -121,9 +121,57 @@ nav > ul > li {
 .card {
     display: flex;
     flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+
+.card h3 {
+    font-size: 2.2rem;
 }
 
 .cards-group {
     max-width: 1201px;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 39px;
+    margin-top: 58px;
+}
+
+.card-img {
+    height: 300px;
+    width: 209px;
+}
+
+.wolves {
+    background-image: url(/assets/images/wolves.png);
+}
+
+.loki {
+    background-image: url(/assets/images/loki.png);
+}
+
+.supernatural {
+    background-image: url(/assets/images/supernatural.png);
+}
+
+.atypical {
+    background-image: url(/assets/images/atypical.png);
+}
+
+.handmaide {
+    background-image: url(/assets/images/handmaid.png);
+}
+
+.sexeducation {
+    background-image: url(/assets/images/sexeducation.png);
+}
+
+.anne {
+    background-image: url(/assets/images/anne.png);
+}
+
+.sexify {
+    background-image: url(/assets/images/sexify.png);
 }
