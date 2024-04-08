@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
     --text-primary: rgba(0, 0, 0, 1);
     --text-secondary: rgba(206, 206, 206, 1);
@@ -10,15 +12,17 @@
     margin: 0%;
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
 }
 
 header {
     background-color: var(--background-secondary);
+    width: 100%;
 }
 
 nav {
     padding: 8px;
-    max-width: 1656px;
+    max-width: 1196px;
     margin: auto;
     color: var(--text-secondary);
     display: flex;
@@ -47,6 +51,13 @@ nav > ul > li {
     font-size: 1.2rem;
 }
 
+nav > ul > li > a {
+    list-style: none;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text-secondary);
+}
+
 .hero-home-img {
     height: 400px;
     width: 100%;
@@ -63,11 +74,13 @@ nav > ul > li {
 
 .hero-home-img h1 {
     font-size: 3.6rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hero-home-img h2 {
     margin-top: 9px;
     font-size: 2.2rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hero-flex {
@@ -121,16 +134,22 @@ nav > ul > li {
 .card {
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    justify-content: start;
+    align-items: center;
+    width: 209px;
     height: fit-content;
+    text-align: center;
 }
 
 .card h3 {
     font-size: 2.2rem;
+    padding-bottom: 20px;
 }
 
 .cards-group {
     max-width: 1201px;
+    justify-content: center;
+    align-items: end;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -142,6 +161,7 @@ nav > ul > li {
 .card-img {
     height: 300px;
     width: 209px;
+    border-radius: 5px;
 }
 
 .wolves {
@@ -175,3 +195,377 @@ nav > ul > li {
 .sexify {
     background-image: url(/assets/images/sexify.png);
 }
+
+.law {
+    background-image: url(/assets/images/law.png);
+}
+
+.yellowstone {
+    background-image: url(/assets/images/yellowstone.png);
+}
+
+.friends {
+    background-image: url(/assets/images/friends.png);
+}
+
+.sweettooth {
+    background-image: url(/assets/images/sweettooth.png);
+}
+
+.chicago {
+    background-image: url(/assets/images/chicago.png);
+}
+
+.strange {
+    background-image: url(/assets/images/strange.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.brave {
+    background-image: url(/assets/images/brave.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.pagination {
+    margin: 50px auto 36px auto;
+    max-width: 1201px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 10px;
+}
+
+.pagination-square {
+    font-size: 1.6rem;
+    padding: 14px 18px;
+    border: 1px solid black;
+}
+
+.pagination-square:first-of-type {
+    background-color: rgba(192, 57, 43, 0.7);
+    color: var(--text-secondary);
+    border: 1px solid rgba(192, 57, 43, 1);
+}
+
+footer {
+    background-color: var(--background-secondary);
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: row;
+    gap: 432px;
+    max-width: 1201px;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 106px;
+}
+
+footer > div > section > p {
+    font-size: 1.4rem;
+    color: var(--text-secondary);
+}
+
+footer > div > section > div > div > p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.news {
+    background-color: var(--background-primary);
+    width: 278px;
+    font-size: 1.4rem;
+    background-color: white;
+    border-radius: 5px 0px 0px 5px;
+    padding: 11px 0px 11px 13px;
+    color: #A9A4A4;
+}
+
+.ok {
+    font-size: 1.4rem;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #C0392B;
+
+    color: white;
+    padding: 11px;
+    text-align: center;
+}
+
+.news-group {
+    display: flex;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* DETAILS PAGE */
+
+.hero-details-img {
+    background-image: url(/assets/images/sinopsis-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+
+.sinopsis-img {
+    background-image: url(/assets/images/lacasa.png);
+    height: 655px;
+    width: 540px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sinopsis-group {
+    max-width: 1196px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 54px 0px 41px 0px;
+    margin: auto;
+}
+
+.sinopsis-info {
+    width: fit-content;
+}
+
+.sinopsis-title h1 {
+    font-size: 4.2rem;
+}
+
+.sinopsis-title span {
+    font-size: 1.6rem;
+}
+
+.sinopsis-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.overview {
+    margin-top: 52px;
+    font-size: 1.6rem;
+}
+
+.language {
+    margin-top: 65px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.language span {
+    margin-top: 65px;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.avaliation {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 11px;
+    font-weight: bold;
+}
+
+.avaliation p {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-left: 17px;
+}
+
+.user-avaliation {
+    margin-top: 24px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.progress-green {
+    width: 245px;
+    height: 9px;
+    background-color: rgba(33, 208, 122, 1);
+
+}
+
+.progress-grey {
+    width: 40px;
+    height: 9px;
+    background-color: rgba(196, 196, 196, 1);
+
+}
+
+.keywords-flex {
+    margin-top: 47px;
+    display: flex;
+}
+
+.keywords p {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.keywords {
+    margin-right: 22px;
+}
+
+.keywords-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.keywords-group p {
+    font-size: 1.2rem;
+    background-color: rgba(196, 196, 196, 1);
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.where-see {
+    margin-top: 24px;
+}
+
+.where-see p {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+main section {
+    margin: auto;
+    max-width: 1196px;;
+}
+
+section h2 {
+    font-size: 2.8rem;
+}
+
+.images-details-group {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-cards {
+    width: 364px;
+    height: 204px;
+}
+
+.details-cards-group {
+    margin-top: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 52px;
+    flex-wrap: wrap;
+}
+
+.profile-cards {
+    height: 175px;
+    width: 138px;
+}
+
+.images-profile-group {
+    max-width: 1196px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 90px;
+    overflow: hidden;
+    margin-bottom: 265px;
+}
+
+.details-profile-group {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+}
+
+.profile-cards-group p {
+    font-size: 1.4rem;
+}
+
+.profile-cards-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-cards-group > p:first-of-type {
+    font-weight: bold;
+}
+
+.scroll-bar {
+    width: 811px;
+    height: 8px;
+    background-color: rgba(196, 196, 196, 1);
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.img38 {
+    background-image: url(/assets/images/image\ 38.png);
+}
+
+.img39 {
+    background-image: url(/assets/images/image\ 39.png);
+}
+
+.img40 {
+    background-image: url(/assets/images/image\ 40.png);
+}
+
+.img41 {
+    background-image: url(/assets/images/image\ 41.png);
+}
+
+.img42 {
+    background-image: url(/assets/images/image\ 42.png);
+}
+
+.img43 {
+    background-image: url(/assets/images/image\ 43.png);
+}
+
+.img44 {
+    background-image: url(/assets/images/image\ 44.png);
+}
+
+.img45 {
+    background-image: url(/assets/images/image\ 45.png);
+}
+
+.img46 {
+    background-image: url(/assets/images/image\ 46.png);
+}
+
+.img47 {
+    background-image: url(/assets/images/image\ 47.png);
+}
+
+.img48 {
+    background-image: url(/assets/images/image\ 48.png);
+}
+
+.img49 {
+    background-image: url(/assets/images/image\ 49.png);
+}
+
+.img50 {
+    background-image: url(/assets/images/image\ 50.png);
+}
+
